@@ -1,0 +1,134 @@
+body {
+    padding: 0;
+}
+header {
+    flex-direction: column;
+    margin: 20px 0;
+}
+.description{
+    margin: 0 20px;
+}
+.search{
+    margin: 0 20px;
+}
+.filter{
+    margin: 0 20px;
+}
+.info{
+    margin: 20px 20px
+}
+.activite{
+    margin: 0 20px;
+}
+
+
+
+header .logo {
+    margin: 0;
+    text-align: center;
+    padding: 0;
+}
+
+header nav ul {
+
+    padding: 0;
+}
+
+nav{
+    width: 100%;
+}
+
+ul{
+    width: 100%;
+}
+
+header nav ul li {
+    width: 100%;
+    padding: 20px;
+    text-align: center;
+    margin: 0px;
+    border-top: none;
+    border-bottom: 2px solid #F2F2F2;
+}
+
+.navlink:hover {
+    color: #0065FC;
+    border-bottom: 2px solid #0065FC;
+}
+
+.search{
+    text-align: center;
+}
+.searchboutton {
+    border-radius: 15px;
+}
+
+.searchbouttontexte {
+    display: none;
+}
+
+.searchiconloupe {
+    display: block;
+    color: white;
+}
+
+.filterwrapper {
+    flex-wrap: wrap;
+}
+
+.hebergement .marseille .container{
+    background-color: white;
+}
+
+.hebergement .populaire .container{
+    border-radius: 0;
+}
+.hebergement section .container {
+    height: 100%;
+}
+
+.hebergement .marseille {
+    order: 2;
+}
+
+.hebergement .populaire {
+    order: 1;
+}
+
+.hebergement .marseille .hebergement-list {
+    flex-direction: column;
+}
+
+.hebergement .marseille .hebergement-list a {
+    width: 100%;
+}
+
+.hebergement-list a article:hover {
+    transform: none;
+}
+
+.activite .activite-list .column {
+    width: 100%;
+}
+
+.activite-list .column article,
+.activite-list .column.double article {
+    height: 250px;
+    margin-bottom: 20px;
+}
+
+.activite-list {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+
+.article:hover {
+    transform: none;
+}
+
+.footercontainer{
+    flex-direction: column;
+    margin: 10px;
+}

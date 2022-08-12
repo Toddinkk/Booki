@@ -1,0 +1,85 @@
+
+.description{
+    margin: 0 20px;
+}
+.search{
+    margin: 0 20px;
+}
+.filter{
+    margin: 10px 20px;
+}
+.info{
+    margin: 20px 20px
+}
+.activite{
+    margin: 0 20px;
+}
+
+
+.filter {
+    display: flex;
+    flex-wrap: wrap;
+}
+.filterwrapper {
+    flex-wrap: wrap;
+}
+
+
+
+
+.hebergement .marseille {
+    order: 2;
+}
+
+.hebergement .populaire {
+    order: 1;
+}
+
+.hebergement {
+    flex-direction: column;
+}
+
+.hebergement .marseille .hebergement-list a {
+    width: 100%;
+}
+.hebergement .marseille,
+.hebergement .populaire {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.hebergement-list a article:hover {
+    transform: none;
+}
+
+.hebergement .marseille .container{
+    background-color: white;
+}
+
+.hebergement .populaire .container{
+    border-radius: 0;
+}
+
+.activite .activite-list {
+    flex-wrap: wrap;
+    height: auto;
+}
+
+.activite .activite-list .column {
+    width: 48%;
+    margin-bottom: 20px;
+}
+
+.article:hover {
+    transform: none;
+}
+
+.footercontainer {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+}
+
+footer .column {
+    width: auto;
+}

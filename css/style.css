@@ -1,0 +1,441 @@
+/************************************
+*             Général               *
+************************************/
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700;800;900&display=swap");
+
+
+body {
+    font-family: "Raleway", "Sans serif";
+    font-size: 18px;
+}
+
+h2 {
+    font-size: 16px;
+}
+
+h3{
+    font-size: 14.5px;
+}
+
+p{
+    font-size: 14.5px;
+}
+
+li{
+    font-size: 15px;
+}
+
+
+/************************************
+*            header + nav           *
+************************************/
+
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 1px;
+    max-width: 1200px;
+    margin: auto;
+    align-items: center;
+}
+
+.logo {
+    padding: 25px 0px;
+}
+
+.logo img {
+    width: 100px;
+}
+
+header nav ul {
+    display: flex;
+    list-style-type: none;
+    margin: auto;
+}
+
+header nav ul li {
+    padding: 50px 30px;
+    border-top: 3px solid transparent;
+}
+
+header nav ul li:hover {
+    border-color: #0065FC;
+}
+
+header nav ul li a {
+    color: black;
+    text-decoration: none;
+}
+
+header nav ul li:hover a {
+    color: #0065FC;
+}
+
+.active{
+    border-color: #0065FC;
+}
+
+.activeA{
+    color: #0065FC;
+}
+
+/************************************
+*         Titre & recherche       *
+************************************/
+
+main{
+    max-width: 1200px;
+    margin: auto;
+}
+
+
+.subtitle {
+    display: block;
+    margin-bottom: 20px;
+}
+
+.search {
+    display: inline-flex;
+    max-width: 100%;
+    overflow: auto;
+}
+.searchicon {
+    background-color: #F2F2F2;
+    padding: 14px 18px;
+    border-radius: 16px 0 0 16px;
+    text-align: center;
+}
+.searchicon2 {
+    margin-left: 1.5px;
+}
+.searchtexte {
+    border-right: none;
+    border-left: none;
+    border-top: #F2F2F2 1px solid;
+    border-bottom: #F2F2F2 1px solid;
+    padding: 0 24px;
+    box-sizing: border-box;
+    width: 220px;
+    font-weight: bold;
+}
+::placeholder {
+    color: black;
+    font-family: "Raleway", "Sans serif";
+    font-size: 16px;
+  }
+
+.searchboutton {
+    background-color: #0065FC;
+    color: white;
+    font-weight: bold;
+    border: none;
+    border-radius: 0 16px 16px 0;
+    padding: 0 16px;
+    font-family: "Raleway", "Sans serif";
+    font-size: 16px;
+    cursor: pointer;
+}
+.searchiconloupe {
+    color: #0065FC;
+}
+
+
+/************************************
+*              Filtres              *
+************************************/
+
+.filter {
+    display: flex;
+    align-items: center;
+    margin: 32px 0;
+}
+
+.filtertitle{
+    margin-right: 16px;
+}
+
+.filter .filtre-box {
+    border-radius: 30px;
+    border: 2px solid #F2F2F2;
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.5s;
+    margin-right: 16px;
+    margin-top: 4px;
+    margin-bottom: 4px;
+}
+
+.filter .filtre-box i {
+    background-color: #DEEBFF;
+    height: 50px;
+    width: 50px;
+    display: inline-block;
+    border-radius: 100%;
+    color: #0065FC;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: -2px;
+}
+
+.filter .filtre-box:hover {
+    transition: background-color 0.5s;
+    background-color: #F2F2F2;
+}
+
+.filter .filtre-box .text {
+    padding: 0px 15px;
+    font-size: 17px;
+}
+
+.filterwrapper {
+    display: flex;
+}
+
+
+/************************************
+*               Infos               *
+************************************/
+
+.info {
+    display: flex;
+    align-items: center;
+    margin-bottom: 32px;
+    font-size: 15px;
+}
+
+.info .fas.fa-info {
+    color: #0065FC;
+    border: 1px solid #F2F2F2;
+    border-radius: 100%;
+    width: 25px;
+    height: 25px;
+    font-size: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 10px;
+}
+
+
+/************************************
+*           Hébergements            *
+************************************/
+
+.hebergement {
+    display: flex;
+    justify-content: space-between;
+}
+
+.container {
+    background-color: #F2F2F2;
+    padding: 32px;
+    border-radius: 20px;
+    box-sizing: content-box;
+}
+
+.hebergement-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.hebergement-list a {
+    width: 30%;
+    margin-bottom: 32px;
+}
+
+.hebergement-list a article {
+    background-color: white;
+    padding: 4px;
+    border-radius: 25px;
+    height: 100%;
+    box-shadow: 0px 0px 10px 0px #E0E0E0;
+}
+
+.hebergement-list a article:hover {
+    transform: scale(1.05);
+}
+
+.hebergement-list a article .fa-star.blue {
+    color: #0065FC;
+    font-size: 14.5px;
+}
+
+.hebergement-list a article .fa-star.grey {
+    color: #F2F2F2;
+    font-size: 14.5px;
+}
+
+.hebergement-list a article img {
+    width: 100%;
+    height: 105px;
+    border-radius: 25px 25px 0px 0px;
+    object-fit: cover;
+}
+
+.hebergement-list a {
+    color: black;
+    text-decoration: none;
+}
+
+.hebergement-list a article .article-content {
+    padding: 10px 10px 0px 10px;
+}
+
+.hebergement-list a article .article-content h3,
+.hebergement-list a article .article-content p {
+    margin: 5px 0;
+}
+
+.hebergement-list a article .article-content .price.bold {
+    font-weight: bold;
+}
+
+.hebergement .marseille {
+    width: 61%;
+}
+
+.hebergement .marseille .subtitleplus {
+    font-weight: bold;
+    font-size: 16px;
+}
+
+
+/************************************
+*            Populaire              *
+************************************/
+
+.titlepopulaire {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+.hebergement .populaire {
+    width: 35%;
+    position: relative;
+}
+
+.hebergement .populaire .hebergement-list {
+    flex-direction: column;
+}
+
+.hebergement .populaire .hebergement-list a {
+    width: 100%;
+    height: 125px;
+}
+
+.hebergement .populaire .hebergement-list a article {
+    display: flex;
+    flex-direction: row;
+}
+
+.hebergement .populaire .hebergement-list a article img {
+    border-radius: 25px 0px 0px 25px;
+    width: 31%;
+    height: 100%;
+}
+
+.hebergement .populaire .hebergement-list a article .article-content {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+
+/************************************
+*            Activités              *
+************************************/
+
+.activite {
+    margin-bottom: 60px;
+}
+
+.activite h2 {
+    margin-top: 50px;
+}
+
+.activite-list {
+    display: flex;
+    justify-content: space-between;
+    height: 600px;
+}
+
+.activite-list .column {
+    width: 23%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border-radius: 25px;
+}
+
+.activite-list .column article img {
+    width: 100%;
+    height: calc(100% - 67px);
+    object-fit: cover;
+    border-radius: 25px 25px 0px 0px;
+}
+
+.activite-list .column article {
+    height: 100%;
+    box-shadow: 0px 0px 10px 0px #E0E0E0;
+    border-radius: 25px;
+}
+
+.activite-list .column article h3 {
+    padding: 21px;
+    margin: 0px;
+}
+
+.activite-list .column.double article {
+    height: 48%;
+}
+
+.article:hover {
+    transform: scale(1.05);
+}
+
+
+
+
+/************************************
+*              Footer               *
+************************************/
+
+footer {
+    background-color: #F2F2F2;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footercontainer{
+    width: 1200px;
+    display: flex;
+    justify-content: space-between;
+}
+
+footer .column {
+    width: 30%;
+}
+
+footer .column ul {
+    padding: 0px;
+    list-style-type: none;
+}
+
+footer .column ul li a {
+    color: black;
+    text-decoration: none;
+    line-height: 35px;
+}
+
+.liste:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
